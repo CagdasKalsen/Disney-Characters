@@ -17,3 +17,7 @@
 # Stretch-goal:
 
 N/A for now
+
+# Wire-frame
+
+![alt text](http://url/to/img.png)
