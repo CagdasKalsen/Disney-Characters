@@ -1,13 +1,14 @@
 import React from "react";
-import CallofDuty from "./components/CallofDuty";
+
 import Home from "./components/Home";
 import AssasinsCreed from "./components/AssasinsCreed";
+import CallofDuty from "./components/CallOfDuty";
 import { Routes, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1> Brandon & Cagdas Game Update</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/assasinscreed" element={<AssasinsCreed />} />
