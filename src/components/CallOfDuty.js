@@ -1,7 +1,7 @@
 import React from "react";
 
-function AssasinsCreed() {
+function CallOfDuty() {
   return <div><h1>Hello</h1></div>;
 }
 
-export default AssasinsCreed;
+export default CallOfDuty;
