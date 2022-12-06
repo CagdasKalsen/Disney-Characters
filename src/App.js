@@ -1,7 +1,7 @@
 import React from "react";
-import Gameinfo from "./components/Gameinfo";
+import CallofDuty from "./components/CallofDuty";
 import Home from "./components/Home";
-import Searchbar from "./components/Searchbar";
+import AssasinsCreed from "./components/AssasinsCreed";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <h1> Brandon & Cagdas Game Update</h1>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/searchbar" element={<Searchbar />} />
-        <Route path="/gameinfo" element={<Gameinfo />} />
+        <Route path="/assasinscreed" element={<AssasinsCreed />} />
+        <Route path="/callofduty" element={<CallofDuty />} />
       </Routes>
     </div>
   );
