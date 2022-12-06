@@ -2,7 +2,7 @@ import React from "react";
 
 import Home from "./components/Home";
 import AssasinsCreed from "./components/AssasinsCreed";
-import CallofDuty from "./components/CallOfDuty";
+
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -12,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/assasinscreed" element={<AssasinsCreed />} />
-        <Route path="/callofduty" element={<CallofDuty />} />
       </Routes>
     </div>
   );

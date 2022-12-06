@@ -9,7 +9,7 @@ function Home() {
       const res = await fetch(
         `https://api.rawg.io/api/games?key=${process.env.REACT_APP_MY_KEY}`
       );
-      const gameData = await Response.json();
+      const gameData = await res.json();
       console.log(gameData);
       setGame(gameData);
     } catch (err) {
@@ -22,17 +22,15 @@ function Home() {
   return (
     <div className="container">
       <div className="navbar">
-        {/* Games.map((game)=>(
-             <Link to={}> */}
-        {/* <h1 className="home">Home</h1>
-        </Link> */}
+        <Link>
+          <h1 className="home">Home</h1>
+        </Link>
         <Link>
           <h1 className="callofduty">Call Of Duty</h1>
         </Link>
         <Link>
           <h1 className="assains">Assasins Creed</h1>
         </Link>
-        ))
       </div>
     </div>
   );
