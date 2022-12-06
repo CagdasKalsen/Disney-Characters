@@ -20,4 +20,4 @@ N/A for now
 
 # Wire-frame
 
-![alt text](https://imgur.com/a/9jMCm7F)
+![screenshot](https://i.imgur.com/bbBLJy7_d.jpg?maxwidth=520&shape=thumb&fidelity=high)
