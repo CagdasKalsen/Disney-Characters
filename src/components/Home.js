@@ -3,15 +3,14 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Home(props) {
-
-  const [game, setGame] = useState(null);
+  const [character, setCharacter] = useState(null);
 
   async function fetchId() {
     try {
-      const response = await fetch(`https://api.rawg.io/api/games?key=${process.env.REACT_APP_MY_KEY}`);
-      const gameData = await response.json();
-      console.log(gameData);
-      setGame(gameData);
+      const response = await fetch(`https://api.disneyapi.dev/characters`);
+      const characterData = await response.json();
+      console.log(characterData);
+      setCharacter(characterData);
     } catch (err) {
       console.log(err);
     }
@@ -28,14 +27,9 @@ function Home(props) {
           <h1 className="home">Home</h1>
         </Link>
         <Link>
-          <h1 className="callofduty">Call Of Duty</h1>
-        </Link>
-        <Link>
-          <h1 className="assains">Assasins Creed</h1>
+          <h1 className="Disney">Disney Characters</h1>
         </Link>
       </div>
     </div>
   );
-  }
-
-export default Home;
+}
