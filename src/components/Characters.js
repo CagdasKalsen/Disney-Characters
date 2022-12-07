@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 // import { useParams } from "react-router";
 
 function Characters() {
@@ -21,15 +21,27 @@ function Characters() {
   }, []);
   return (
     <div className="container">
+      <div className="link">
+        <Link id="home" to={"/"}>
+          Home
+        </Link>
+        <Link id="char" to={"/characters"}>
+          Characters
+        </Link>
+        <Link id="about" to={"/aboutus"}>
+          About Us
+        </Link>
+      </div>
       {character &&
         character.map((char) => {
           return (
             <div className="card">
-              <p>Name : {char.name}</p>
-              <p>Tv Shows : {char.tvShows}</p>
-              <p>Games : {char.videoGames}</p>
-              <p>Fims : {char.films}</p>
-              <img src={char.imageUrl} alt="" />
+              <div className="name">
+                <p>Name : {char.name}</p>
+              </div>
+              <div className="image">
+                <img src={char.imageUrl} alt="" />
+              </div>
             </div>
           );
         })}
@@ -37,30 +49,3 @@ function Characters() {
   );
 }
 export default Characters;
-
-//   (
-//     <div className="details-container">
-//       <img src={character.image} alt={character.name} />
-//       <div className="details">
-//         <h2>Hello</h2>
-//       </div>
-//       <h1>Char</h1>
-//     </div>
-//   );
-
-//   const characterId = useParams();
-//   const url = `${characterId.id}`;
-//   const [character, setCharacter] = useState(null);
-
-//   useEffect(() => {
-//     fetch(url)
-//       .then((response) => response.json())
-//       .then((json) => {
-//         setCharacter(json);
-//       })
-//       .catch(console.error);
-//   }, []);
-
-//   if (!character) {
-//     return <p>Loading...</p>;
-//   }
