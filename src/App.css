@@ -9,3 +9,13 @@ h1 {
     font-family: cursive;
     color: white;
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,16 +1,15 @@
 import React from "react";
-import Home from "./components/Home";
-import Character from "./components/Character";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import Pages from "./pages/Pages";
+// import Character from "./components/Characters";
+// import { Routes, Route } from "react-router-dom";
+// import "./App.css";
+// import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/character" element={<Character />} />
-      </Routes>
+      {" "}
+      {/* <Home /> */} <h1> hello </h1> <Pages /> {/* <Character /> */}{" "}
     </div>
   );
 }
