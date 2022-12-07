@@ -24,9 +24,8 @@ function Home() {
   return (
     <div className="container">
       <div className="navbar">
-        {" "}
-        <h1>Hello</h1>
-      </div>{" "}
+        <h1> Hello </h1>
+      </div>
       <Characters />
     </div>
   );
