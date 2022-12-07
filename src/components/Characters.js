@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // import { useParams } from "react-router";
 
-function Characters() {
+function Characters(props) {
   const [character, setCharacter] = useState(null);
 
   async function fetchCharacter() {
@@ -33,16 +33,18 @@ function Characters() {
         </Link>
       </div>
       {character &&
-        character.map((char) => {
+        character.map((char, index) => {
           return (
-            <div className="card">
-              <div className="name">
-                <p>Name : {char.name}</p>
+            <Link to={`/characterdetails/${char._id}`} key={index}>
+              <div className="card">
+                <div className="name">
+                  <p>Name : {char.name}</p>
+                </div>
+                <div className="image">
+                  <img src={char.imageUrl} alt="" />
+                </div>
               </div>
-              <div className="image">
-                <img src={char.imageUrl} alt="" />
-              </div>
-            </div>
+            </Link>
           );
         })}
     </div>
