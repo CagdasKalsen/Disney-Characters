@@ -18,7 +18,7 @@ function App() {
         <Route path="/aboutus" element={<Aboutus />} />
         {/* Line 20 Route path does not populate when card is clicked.. ALSO need more information about that specific card when it is clicked.. Not just an image and name... ALSO seperate name and photo in css
          */}
-        <Route path="/characters/:id " element={<Characterdetails />} />
+        <Route path="/characters/:id" element={<Characterdetails />} />
       </Routes>
     </div>
   );

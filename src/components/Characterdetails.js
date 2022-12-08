@@ -4,8 +4,8 @@ import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
 function Characterdetails(props) {
-  const charId = useParams();
-  const url = `https://api.disneyapi.dev/characters/${charId._id}`;
+  const { id } = useParams();
+  const url = `https://api.disneyapi.dev/characters/${id}`;
   const [char, setChar] = useState(null);
   useEffect(() => {
     fetch(url)
@@ -20,20 +20,20 @@ function Characterdetails(props) {
     return <p>Loading...</p>;
   }
 
-  return char.map((char, index) => {
-    return (
-      <div className="card">
-        <div className="name">
-          <p>
-            Character <br /> {char.name}
-          </p>
-        </div>
-        <div className="image">
-          <img src={char.imageUrl} alt="" />
-        </div>
+  return char ? (
+    <div className="card">
+      <div className="name">
+        <p>
+          Character <br /> {char.name}
+        </p>
       </div>
-    );
-  });
+      <div className="image">
+        <img src={char.imageUrl} alt="" />
+      </div>
+    </div>
+  ) : (
+    <p>LOADING...</p>
+  );
 }
 
 export default Characterdetails;
