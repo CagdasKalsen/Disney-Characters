@@ -38,7 +38,7 @@ function Characters(props) {
             <div className="card">
               <Link id="name" to={`/characters/${char._id}`} key={index}>
                 <div className="name">
-                  <p>
+                  <p className="charname">
                     Character <br /> {char.name}
                   </p>
                 </div>
