@@ -20,7 +20,7 @@ function Home() {
 
       <img
         className="bg"
-        src="https://media3.giphy.com/media/kolvlRnXh8Jj2/giphy.gif"
+        src="https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2021/11/dpd34092494209.jpg"
         alt=""
       />
     </div>

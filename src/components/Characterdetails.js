@@ -4,8 +4,8 @@ import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
 function Characterdetails(props) {
-  const { charId } = useParams();
-  const url = `https://api.disneyapi.dev/characters/${charId}`;
+  const { id } = useParams();
+  const url = `https://api.disneyapi.dev/characters/${id}`;
   const [char, setChar] = useState(null);
   useEffect(() => {
     fetch(url)
