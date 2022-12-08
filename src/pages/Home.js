@@ -20,7 +20,7 @@ function Home() {
 
       <img
         className="bg"
-        src="https://media.king5.com/assets/KING/images/c2b53d29-9aaa-49cb-b7c4-74035ec6880a/c2b53d29-9aaa-49cb-b7c4-74035ec6880a_750x422.jpg"
+        src="https://media3.giphy.com/media/kolvlRnXh8Jj2/giphy.gif"
         alt=""
       />
     </div>
