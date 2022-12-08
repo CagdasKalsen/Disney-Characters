@@ -9,7 +9,7 @@ function Characters(props) {
     try {
       const response = await fetch(`https://api.disneyapi.dev/characters`);
       const characterData = await response.json();
-      console.log(characterData);
+      console.log(characterData.data[0]._id);
       setCharacter(characterData.data);
     } catch (err) {
       console.log(err);
@@ -35,16 +35,18 @@ function Characters(props) {
       {character &&
         character.map((char, index) => {
           return (
-            <Link to={`/characterdetails/${char._id}`} key={index}>
-              <div className="card">
+            <div className="card">
+              <Link id="name" to={`/characters/${char._id}`} key={index}>
                 <div className="name">
-                  <p>Name : {char.name}</p>
+                  <p>
+                    Character <br /> {char.name}
+                  </p>
                 </div>
                 <div className="image">
                   <img src={char.imageUrl} alt="" />
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           );
         })}
     </div>

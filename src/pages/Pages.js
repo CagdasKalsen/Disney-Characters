@@ -7,7 +7,7 @@ import Characterdetails from "../components/Characterdetails";
 
 function Pages() {
   return (
-    <div className="navbar">
+    <div className="link">
       <Home />
       <Aboutus />
       <Characters />
