@@ -37,12 +37,20 @@ screen and (max-height: 600px) {
     font-size: larger;
 }
 
+
+/*
+ disguss this --> when you clicked some white areas ( for instance below Abigal card ) it still takes you to details page unless you use css below. But when you use css below then our images get smaller...  
+#name {
+    width: 220px;
+    height: 295px;
+} */
+
 .card {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     margin: 20px;
-    width: 200px;
-    height: 275px;
+    width: 220px;
+    height: 295px;
     border: 4px solid lightgray;
     border-radius: 2rem;
     background: linear-gradient( 120deg, black 0%, rgb(61, 14, 61) 20%, rgb(77, 77, 151) 70%, black 125%);
@@ -63,7 +71,6 @@ screen and (max-height: 600px) {
 }
 
 .name {
-    color: black;
     font-size: 20px;
 }
 
@@ -106,5 +113,11 @@ img {
 
 .charname {
     color: white;
+    font-family: cursive;
+}
+
+.details-page>p {
+    font-size: 30px;
+    color: black;
     font-family: cursive;
 }

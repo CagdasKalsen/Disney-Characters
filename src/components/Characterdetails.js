@@ -16,24 +16,19 @@ function Characterdetails(props) {
       .catch(console.err);
   }, []);
 
-  if (!char) {
-    return <p>Loading...</p>;
-  }
-
   return char ? (
-    <div className="card">
-      <div className="name">
-        <p>
-          Character <br /> {char.name}
-        </p>
-      </div>
-      <div className="image">
-        <img src={char.imageUrl} alt="" />
-      </div>
+    <div className="details-page">
+      <p>{char.name}</p>
+      <img src={char.imageUrl} alt="" />
+      <h2>{char.tvShows}</h2>
+      <h2>{char.allies}</h2>
+      <h2>{char.enemies}</h2>
+      <h2>{char.films}</h2>
+      <h2>{char.shortFilms}</h2>
+      <h2>{char.videoGames}</h2>
     </div>
   ) : (
     <p>LOADING...</p>
   );
 }
-
 export default Characterdetails;
