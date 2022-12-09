@@ -12,11 +12,11 @@ function Home() {
         alt=""
       />
       <h1>Thank you for visiting our page !!</h1>
-      <h2>
+      <h1>
         Navigate to Characters tab to find out more information on your favorite
         Disney star
-      </h2>
-      <h2>About Us has information on the creators of this App</h2>
+      </h1>
+      <h1>About Us has information on the creators of this App</h1>
     </div>
   );
 }

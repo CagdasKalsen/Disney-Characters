@@ -19,15 +19,22 @@ function Characterdetails(props) {
   return char ? (
     <div className="details-page">
       <p>{char.name}</p>
-      <img src={char.imageUrl} alt="" />
-      <h2>
-        {char.tvShows[0]} , {char.tvShows[1]}
-      </h2>
-      <h2>{char.allies}</h2>
-      <h2>{char.enemies}</h2>
-      <h2>{char.films}</h2>
-      <h2>{char.shortFilms}</h2>
-      <h2>{char.videoGames}</h2>
+      <img className="details-image" src={char.imageUrl} alt="" />
+      <div className="details-text">
+        <h2 className="tv">
+          <h1>TV Shows:</h1> <br></br>
+          {char.tvShows}
+        </h2>
+        <h2 className="films">
+          <h1>Films:</h1>
+          <br></br>
+          {char.films}
+        </h2>
+        <h2 className="video-games">
+          <h1>Video Games:</h1> <br></br>
+          {char.videoGames}
+        </h2>
+      </div>
     </div>
   ) : (
     <p>LOADING...</p>

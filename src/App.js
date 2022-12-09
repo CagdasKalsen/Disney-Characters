@@ -10,29 +10,45 @@ import Aboutus from "./pages/Aboutus";
 import Characterdetails from "./components/Characterdetails";
 
 function App() {
-  return (
-    <div className="home">
-      <div className="link">
-        <Link id="home" to={"/"}>
-          Home
-        </Link>
-        <Link id="char" to={"/characters"}>
-          Characters
-        </Link>
-        <Link id="about" to={"/aboutus"}>
-          About Us
-        </Link>
-      </div>
+    return ( <
+        div className = "home" >
+        <
+        div className = "link" >
+        <
+        Link id = "home"
+        to = { "/" } >
+        Home <
+        /Link> <
+        Link id = "char"
+        to = { "/characters" } >
+        Characters <
+        /Link> <
+        Link id = "about"
+        to = { "/aboutus" } >
+        About Us <
+        /Link> <
+        /div>
 
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/characters" element={<Characters />} />
-          <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/characters/:id" element={<Characterdetails />} />
-        </Routes>
-      </div>
-    </div>
-  );
+        <
+        div className = "App" >
+        <
+        Routes >
+        <
+        Route path = "/"
+        element = { < Home / > }
+        /> <
+        Route path = "/characters"
+        element = { < Characters / > }
+        /> <
+        Route path = "/aboutus"
+        element = { < Aboutus / > }
+        /> <
+        Route path = "/characters/:id"
+        element = { < Characterdetails / > }
+        /> <
+        /Routes> <
+        /div> <
+        /div>
+    );
 }
 export default App;
