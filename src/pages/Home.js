@@ -5,24 +5,18 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div>
-      <div className="link">
-        <Link id="home" to={"/"}>
-          Home
-        </Link>
-        <Link id="char" to={"/characters"}>
-          Characters
-        </Link>
-        <Link id="about" to={"/aboutus"}>
-          About Us
-        </Link>
-      </div>
-
+    <div className="home-page">
       <img
         className="bg"
-        src="https://media.king5.com/assets/KING/images/c2b53d29-9aaa-49cb-b7c4-74035ec6880a/c2b53d29-9aaa-49cb-b7c4-74035ec6880a_750x422.jpg"
+        src="https://featuredanimation.com/wp-content/uploads/2022/10/Popular-Disney-Characters.jpg"
         alt=""
       />
+      <h1>Thank you for visiting our page !!</h1>
+      <h1>
+        Navigate to Characters tab to find out more information on your favorite
+        Disney star
+      </h1>
+      <h1>About Us has information on the creators of this App</h1>
     </div>
   );
 }

@@ -2,9 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+
 function Characterdetails(props) {
-  const charId = useParams();
-  const url = `https://api.disneyapi.dev/characters/${charId.id}`;
+  const { id } = useParams();
+  const url = `https://api.disneyapi.dev/characters/${id}`;
   const [char, setChar] = useState(null);
   useEffect(() => {
     fetch(url)
@@ -15,11 +16,16 @@ function Characterdetails(props) {
       .catch(console.err);
   }, []);
 
-  if (!char) {
-    return <p>Loading...</p>;
-  }
-
-  return <div>hello</div>;
+  return char ? (
+    <div className="details-page">
+      <p>{char.name}</p>
+      <img src={char.imageUrl} alt="" />
+      <h2 className="tv"><h1>TV Shows:</h1> <br></br>{char.tvShows}</h2>
+      <h2 className="films"><h1>Films:</h1><br></br>{char.films}</h2>
+      <h2 className="video-games"><h1>Video Games:</h1> <br></br>{char.videoGames}</h2>
+    </div>
+  ) : (
+    <p>LOADING...</p>
+  );
 }
-
 export default Characterdetails;
