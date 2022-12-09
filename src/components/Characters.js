@@ -21,23 +21,25 @@ function Characters(props) {
   }, []);
   return (
     <div className="container">
+      {" "}
       {character &&
         character.map((char, index) => {
           return (
             <div className="card">
               <Link id="name" to={`/characters/${char._id}`} key={index}>
-                {/* <div className="name"> */}
+                {" "}
+                {/* <div className="name"> */}{" "}
                 <p className="charname">
-                  Character <br /> {char.name}
-                </p>
-                {/* </div> */}
+                  Character <br /> {char.name}{" "}
+                </p>{" "}
+                {/* </div> */}{" "}
                 <div className="image">
                   <img src={char.imageUrl} alt="" />
-                </div>
-              </Link>
+                </div>{" "}
+              </Link>{" "}
             </div>
           );
-        })}
+        })}{" "}
     </div>
   );
 }
