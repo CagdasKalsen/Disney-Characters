@@ -20,7 +20,9 @@ function Characterdetails(props) {
     <div className="details-page">
       <p>{char.name}</p>
       <img src={char.imageUrl} alt="" />
-      <h2>{char.tvShows}</h2>
+      <h2>
+        {char.tvShows[0]} , {char.tvShows[1]}
+      </h2>
       <h2>{char.allies}</h2>
       <h2>{char.enemies}</h2>
       <h2>{char.films}</h2>
