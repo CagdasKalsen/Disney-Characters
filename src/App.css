@@ -2,18 +2,20 @@
     width: 100%;
 }
 
-@media screen and (max-width: 600px),
-screen and (max-height: 600px) {
-    body {
-        background-color: lightblue;
-    }
-    .bg {
-        width: 100%;
-        height: 100%;
-    }
-    #name {
-        color: black;
-    }
+html {
+    height: 100%;
+}
+
+.home {
+    width: 100%;
+}
+
+.about-us-background {
+    background-color: white;
+}
+
+body {
+    background: linear-gradient(120deg, rgb(164, 164, 195) 0%, rgb(134, 112, 206) 20%, rgb(126, 184, 202) 70%, rgb(199, 183, 183) 125%);
 }
 
 .link {
@@ -21,11 +23,16 @@ screen and (max-height: 600px) {
     justify-content: space-around;
     font-size: 25px;
     font-family: cursive;
-    color: chartreuse;
     background-color: rgb(127, 176, 255);
     width: 100%;
     height: 50px;
     margin-bottom: 10px;
+}
+
+#char:hover,
+#about:hover,
+#home:hover {
+    transform: scale(1.05);
 }
 
 #home,
@@ -37,13 +44,10 @@ screen and (max-height: 600px) {
     font-size: larger;
 }
 
-
-/*
- disguss this --> when you clicked some white areas ( for instance below Abigal card ) it still takes you to details page unless you use css below. But when you use css below then our images get smaller...  
 #name {
     width: 220px;
     height: 295px;
-} */
+}
 
 .card {
     display: grid;
@@ -51,9 +55,12 @@ screen and (max-height: 600px) {
     margin: 20px;
     width: 220px;
     height: 295px;
-    border: 4px solid lightgray;
+    border: 4px solid rgb(158, 214, 195);
     border-radius: 2rem;
-    background: linear-gradient( 120deg, black 0%, rgb(61, 14, 61) 20%, rgb(77, 77, 151) 70%, black 125%);
+}
+
+.card:hover {
+    transform: scale(1.09);
 }
 
 .container {
@@ -61,6 +68,7 @@ screen and (max-height: 600px) {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    background: linear-gradient(120deg, rgb(164, 164, 195) 0%, rgb(134, 112, 206) 20%, rgb(99, 61, 131) 70%, rgb(164, 164, 195) 125%);
 }
 
 .image {
@@ -117,7 +125,44 @@ img {
 }
 
 .details-page>p {
-    font-size: 30px;
-    color: black;
+    font-size: 40px;
+    color: white;
     font-family: cursive;
+}
+
+.details-text {
+    margin-bottom: 100px;
+}
+
+.details-image {
+    width: 250px;
+    height: 350px;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+
+div>.films {
+    margin-top: 80px;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
+
+div>.video-games {
+    margin-top: 80px;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
+
+div>.tv {
+    margin-top: 80px;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
 }
