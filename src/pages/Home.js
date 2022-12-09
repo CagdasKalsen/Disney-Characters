@@ -5,11 +5,19 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <img
-      className="bg"
-      src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F41%2Fc6%2Fb4%2F41c6b4b4757c6299ba53ed137865164b.gif"
-      alt=""
-    />
+    <div className="home-page">
+      <img
+        className="bg"
+        src="https://featuredanimation.com/wp-content/uploads/2022/10/Popular-Disney-Characters.jpg"
+        alt=""
+      />
+      <h1>Thank you for visiting our page !!</h1>
+      <h2>
+        Navigate to Characters tab to find out more information on your favorite
+        Disney star
+      </h2>
+      <h2>About Us has information on the creators of this App</h2>
+    </div>
   );
 }
 

@@ -11,7 +11,7 @@ import Characterdetails from "./components/Characterdetails";
 
 function App() {
   return (
-    <div>
+    <div className="home">
       <div className="link">
         <Link id="home" to={"/"}>
           Home
