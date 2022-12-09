@@ -5,24 +5,18 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div>
-      <div className="link">
-        <Link id="home" to={"/"}>
-          Home
-        </Link>
-        <Link id="char" to={"/characters"}>
-          Characters
-        </Link>
-        <Link id="about" to={"/aboutus"}>
-          About Us
-        </Link>
-      </div>
-
+    <div className="home-page">
       <img
         className="bg"
-        src="https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2021/11/dpd34092494209.jpg"
+        src="https://featuredanimation.com/wp-content/uploads/2022/10/Popular-Disney-Characters.jpg"
         alt=""
       />
+      <h1>Thank you for visiting our page !!</h1>
+      <h2>
+        Navigate to Characters tab to find out more information on your favorite
+        Disney star
+      </h2>
+      <h2>About Us has information on the creators of this App</h2>
     </div>
   );
 }
