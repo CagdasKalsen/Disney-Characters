@@ -147,21 +147,23 @@ h1 {
     color: white;
 }
 
-h2 {
+div>.films {
     margin-top: 80px;
     text-align: center;
     font-family: fantasy;
     color: white;
 }
 
-.tv {
-    margin-top: 20px;
+div>.video-games {
+    margin-top: 80px;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
 }
 
-.video-games {
-    margin-top: 20px;
-}
-
-.films {
-    margin-top: 20px;
+div>.tv {
+    margin-top: 80px;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
 }

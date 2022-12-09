@@ -4,13 +4,27 @@ import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
 function Characterdetails(props) {
+  // const allShows = char.data.tvShows.map((show) => <p>{show}</p>);
+  // const allFilms = char.data.films.map((film) => <p>{film}</p>);
+  // const allGames = char.data.videoGames.map((game) => <p>{game}</p>);
+
+  // return (
+  //   <div>
+  //     <h2>tvShows</h2>
+  //     <div>{allShows.length ? allShows : "N/A"} </div>
+  //     <h2>films</h2>
+  //     <div>{allFilms.length ? allFilms : "N/A"} </div>
+  //     <h2>videoGames</h2>
+  //     <div>{allGames.length ? allGames : "N/A"} </div>
+  //   </div>
+  // //   // {char.map((data)=> (
+  // //   //   <Detail shows={data.tvShows} films={data.allFilms} games={data.videoGames} />
+  // //   // ))}
+  // // )
+
   const { id } = useParams();
   const url = `https://api.disneyapi.dev/characters/${id}`;
   const [char, setChar] = useState(null);
-  const allShows = char.data.tvShows.map((show) => <p>{show}</p>);
-  console.log(allShows);
-  const allFilms = char.data.films.map((film) => <p>{film}</p>);
-  const allGames = char.data.videoGames.map((game) => <p>{game}</p>);
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
@@ -19,6 +33,7 @@ function Characterdetails(props) {
       })
       .catch(console.err);
   }, []);
+
   return char ? (
     <div className="details-page">
       <p>{char.name}</p>
@@ -43,4 +58,5 @@ function Characterdetails(props) {
     <p>LOADING...</p>
   );
 }
+
 export default Characterdetails;
