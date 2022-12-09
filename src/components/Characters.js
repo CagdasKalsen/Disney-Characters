@@ -8,7 +8,7 @@ function Characters(props) {
     try {
       const response = await fetch(`https://api.disneyapi.dev/characters`);
       const characterData = await response.json();
-      console.log(characterData);
+      console.log(characterData.videoGames);
       setCharacter(characterData.data);
     } catch (err) {
       console.log(err);
