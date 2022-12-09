@@ -5,25 +5,11 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div>
-      <div className="link">
-        <Link id="home" to={"/"}>
-          Home
-        </Link>
-        <Link id="char" to={"/characters"}>
-          Characters
-        </Link>
-        <Link id="about" to={"/aboutus"}>
-          About Us
-        </Link>
-      </div>
-
-      <img
-        className="bg"
-        src="https://media3.giphy.com/media/kolvlRnXh8Jj2/giphy.gif"
-        alt=""
-      />
-    </div>
+    <img
+      className="bg"
+      src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F41%2Fc6%2Fb4%2F41c6b4b4757c6299ba53ed137865164b.gif"
+      alt=""
+    />
   );
 }
 
