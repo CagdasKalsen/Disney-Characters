@@ -131,9 +131,13 @@ img {
     font-family: cursive;
 }
 
+.details-text {
+    margin-bottom: 100px;
+}
+
 .details-image {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
 }
 
 h1 {
@@ -150,8 +154,14 @@ h2 {
     color: white;
 }
 
-.tv {}
+.tv {
+    margin-top: 20px;
+}
 
-.video-games {}
+.video-games {
+    margin-top: 20px;
+}
 
-.films {}
+.films {
+    margin-top: 20px;
+}
