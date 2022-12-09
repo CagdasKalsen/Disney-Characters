@@ -4,7 +4,6 @@ import { useParams } from "react-router";
 
 function Characters(props) {
   const [character, setCharacter] = useState(null);
-
   async function fetchCharacter() {
     try {
       const response = await fetch(`https://api.disneyapi.dev/characters`);
@@ -19,18 +18,21 @@ function Characters(props) {
   useEffect(() => {
     fetchCharacter();
   }, []);
+
   return (
     <div className="container">
+      
       {character &&
         character.map((char, index) => {
           return (
             <div className="card">
               <Link id="name" to={`/characters/${char._id}`} key={index}>
-                {/* <div className="name"> */}
+                
+                <div className="name">
                 <p className="charname">
                   Character <br /> {char.name}
                 </p>
-                {/* </div> */}
+                </div>
                 <div className="image">
                   <img src={char.imageUrl} alt="" />
                 </div>
@@ -41,4 +43,5 @@ function Characters(props) {
     </div>
   );
 }
+
 export default Characters;
