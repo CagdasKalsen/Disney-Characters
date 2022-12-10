@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router";
 
-function Characters(props) {
+function Characters() {
   const [character, setCharacter] = useState(null);
   async function fetchCharacter() {
     try {
       const response = await fetch(`https://api.disneyapi.dev/characters`);
       const characterData = await response.json();
-      console.log(characterData.videoGames);
       setCharacter(characterData.data);
     } catch (err) {
       console.log(err);
