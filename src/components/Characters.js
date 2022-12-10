@@ -8,7 +8,6 @@ function Characters(props) {
     try {
       const response = await fetch(`https://api.disneyapi.dev/characters`);
       const characterData = await response.json();
-      console.log(characterData.videoGames);
       setCharacter(characterData.data);
     } catch (err) {
       console.log(err);
@@ -24,7 +23,7 @@ function Characters(props) {
       {character &&
         character.map((char, index) => {
           return (
-            <div className="card">
+            <div key={index} className="card">
               <Link id="name" to={`/characters/${char._id}`} key={index}>
                 <div className="name">
                   <p className="charname">

@@ -14,23 +14,23 @@ function App() {
     <div className="home">
       <div className="link">
         <Link id="home" to={"/"}>
-          Home{" "}
-        </Link>{" "}
+          Home
+        </Link>
         <Link id="char" to={"/characters"}>
-          Characters{" "}
-        </Link>{" "}
+          Characters
+        </Link>
         <Link id="about" to={"/aboutus"}>
-          About Us{" "}
-        </Link>{" "}
+          About Us
+        </Link>
       </div>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />{" "}
-          <Route path="/characters" element={<Characters />} />{" "}
-          <Route path="/aboutus" element={<Aboutus />} />{" "}
-          <Route path="/characters/:id" element={<Characterdetails />} />{" "}
-        </Routes>{" "}
-      </div>{" "}
+          <Route path="/" element={<Home />} />
+          <Route path="/characters" element={<Characters />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/characters/:id" element={<Characterdetails />} />
+        </Routes>
+      </div>
     </div>
   );
 }
