@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 function Characters() {
   const [character, setCharacter] = useState(null);
   async function fetchCharacter() {
@@ -12,20 +11,18 @@ function Characters() {
       console.log(err);
     }
   }
-
   useEffect(() => {
     fetchCharacter();
   }, []);
-
   return (
     <div className="container">
       {character &&
         character.map((char, index) => {
           return (
-            <div key={index} className="card">
+            <div className="card">
               <Link id="name" to={`/characters/${char._id}`} key={index}>
                 <div className="name">
-                  <p className="charname">
+                  <p className="charactername">
                     Character <br /> {char.name}
                   </p>
                 </div>
@@ -39,5 +36,4 @@ function Characters() {
     </div>
   );
 }
-
 export default Characters;

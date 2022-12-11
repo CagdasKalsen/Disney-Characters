@@ -127,53 +127,60 @@ img {
 }
 
 .charname {
+    margin-top: 10px;
+    text-align: left;
+    color: white;
+    font-family: cursive;
+}
+
+.charactername {
+    text-align: center;
     color: white;
     font-family: cursive;
 }
 
 .details-page>p {
-    font-size: 50px;
+    font-size: 100px;
     color: white;
     font-family: cursive;
 }
 
 .details-text {
-    text-align: center;
+    margin-bottom: 100px;
 }
 
-.charname,
+/* .charname,
 .details-image {
     margin-left: 40px;
-}
+} */
 
 .details-image {
-    width: 280px;
+    width: 250px;
     height: 350px;
 }
 
 h1 {
-    margin-top: 50px;
     text-align: center;
     font-family: cursive;
     color: white;
 }
 
 div>.films {
-    /* margin-top: 80px; */
+    margin-top: 25px;
     text-align: center;
     font-family: fantasy;
     color: white;
 }
 
 div>.video-games {
-    /* margin-top: 80px; */
+    margin-top: 25px;
     text-align: center;
     font-family: fantasy;
     color: white;
 }
 
 div>.tv {
-    /* margin-top: 80px; */
+    margin-top: 25px;
     text-align: center;
     font-family: fantasy;
     color: white;
