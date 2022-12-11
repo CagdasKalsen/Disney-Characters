@@ -13,6 +13,7 @@ function Characterdetails() {
       })
       .catch(console.err);
   }, []);
+
   return char ? (
     <div className="details-page">
       <p className="charname">{char.name}</p>
