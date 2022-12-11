@@ -1,23 +1,38 @@
-# project2
+# Disney Characters Project
 
-# Home-Page:
+## Home Page:
 
--Header with Title/ nav-bar (Home Page, About, Games, FAQ)
+Our Home-Page will display a photo of Disney Characters and a short message about our website. From here, you can navigate to the Characters/About Us tab to find out more!
 
--Search bar to input game titles and get what you input. For example, type in Assasin's Creed, all of the Assasin's creed game titles will appear.
+![screenshot](https://i.imgur.com/AHjabTa.jpg)
 
--Popular games will be displayed on home page, when user clicks, they will see more details about specific game.
+## Characters Page:
 
-# About Us Page:
+On the Characters tab, you will be shown 50 characters from Disney. Some you may know, some you may not! Click on a character you want to learn more about, keep in mind, some characters may not have any details for certain things. We only display TV shows, Films and Video Games the characters have been in.
 
--Brandon & Cagdas info and hobbies
+![screenshot](https://i.imgur.com/Hc4tHSa.png)
 
--Why we started this website (to give gamers quick access to information on any game they want)
+## Character Details Page:
 
-# Stretch-goal:
+Character details shows three things about the character you picked! Tv shows, Films and Video Games they have been in. Not every character has been in all 3 catergories so there may be some missing space for those that do not contain those properties!
 
-N/A for now
+![screenshot](https://i.imgur.com/HGCBHCd.png)
+![screenshot](https://i.imgur.com/794laiH.png)
+## About Us Page:
 
-# Wire-frame
+This page shows links to Cagdas Kalsen's Github/LinkedIn as well as Brandon Tobin's Github/LinkedIn.
 
-![screenshot](https://i.imgur.com/bbBLJy7_d.jpg?maxwidth=520&shape=thumb&fidelity=high)
+![screenshot](https://i.imgur.com/63ZkM7X.png)
+
+## Wire-frame
+
+![screenshot](https://i.imgur.com/sMu5P9L.png)
+
+## Stretch-goal:
+
+Since we have reached MVP, we are happy with the app but would of course like to add some more functionality and cleanup. Here are a few things we would like to do soon.
+
+-Search bar at top of page
+-Next button on bottom of page to load 50 more characters
+-Fix up some CSS to make the app look as good as possible
+-More TBD

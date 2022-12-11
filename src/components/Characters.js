@@ -1,40 +1,33 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router";
-
-function Characters(props) {
+function Characters() {
   const [character, setCharacter] = useState(null);
   async function fetchCharacter() {
     try {
       const response = await fetch(`https://api.disneyapi.dev/characters`);
       const characterData = await response.json();
-      console.log(characterData);
       setCharacter(characterData.data);
     } catch (err) {
       console.log(err);
     }
   }
-
   useEffect(() => {
     fetchCharacter();
   }, []);
-
   return (
     <div className="container">
-      
       {character &&
         character.map((char, index) => {
           return (
             <div className="card">
               <Link id="name" to={`/characters/${char._id}`} key={index}>
-                
                 <div className="name">
-                <p className="charname">
-                  Character <br /> {char.name}
-                </p>
+                  <p className="charactername">
+                    Character <br /> {char.name}
+                  </p>
                 </div>
                 <div className="image">
-                  <img src={char.imageUrl} alt="" />
+                  <img src={char.imageUrl} alt="image" />
                 </div>
               </Link>
             </div>
@@ -43,5 +36,4 @@ function Characters(props) {
     </div>
   );
 }
-
 export default Characters;

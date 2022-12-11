@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    height: auto;
     background: linear-gradient(120deg, rgb(164, 164, 195) 0%, rgb(134, 112, 206) 20%, rgb(126, 184, 202) 70%, rgb(199, 183, 183) 125%);
 }
 
@@ -61,6 +62,12 @@ body {
 
 .card:hover {
     transform: scale(1.09);
+}
+
+.searchbar {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -120,12 +127,20 @@ img {
 }
 
 .charname {
+    margin-top: 10px;
+    text-align: left;
+    color: white;
+    font-family: cursive;
+}
+
+.charactername {
+    text-align: center;
     color: white;
     font-family: cursive;
 }
 
 .details-page>p {
-    font-size: 40px;
+    font-size: 100px;
     color: white;
     font-family: cursive;
 }
@@ -134,35 +149,43 @@ img {
     margin-bottom: 100px;
 }
 
+/* .charname,
+.details-image {
+    margin-left: 40px;
+} */
+
 .details-image {
     width: 250px;
     height: 350px;
 }
 
 h1 {
-    margin-top: 50px;
     text-align: center;
     font-family: cursive;
     color: white;
 }
 
 div>.films {
-    margin-top: 80px;
+    margin-top: 25px;
     text-align: center;
     font-family: fantasy;
     color: white;
 }
 
 div>.video-games {
-    margin-top: 80px;
+    margin-top: 25px;
     text-align: center;
     font-family: fantasy;
     color: white;
 }
 
 div>.tv {
-    margin-top: 80px;
+    margin-top: 25px;
     text-align: center;
     font-family: fantasy;
     color: white;
+}
+
+.details {
+    font-size: 22px;
 }

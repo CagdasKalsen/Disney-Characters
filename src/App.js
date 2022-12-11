@@ -8,7 +8,6 @@ import Characters from "./components/Characters";
 import Home from "./pages/Home";
 import Aboutus from "./pages/Aboutus";
 import Characterdetails from "./components/Characterdetails";
-
 function App() {
   return (
     <div className="home">
@@ -23,7 +22,6 @@ function App() {
           About Us
         </Link>
       </div>
-
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
