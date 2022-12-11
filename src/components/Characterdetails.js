@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-
 function Characterdetails() {
   const { id } = useParams();
   const url = `https://api.disneyapi.dev/characters/${id}`;
@@ -57,5 +56,4 @@ function Characterdetails() {
     <p>LOADING...</p>
   );
 }
-
 export default Characterdetails;
