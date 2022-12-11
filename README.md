@@ -10,7 +10,7 @@ Our Home-Page will display a photo of Disney Characters and a short message abou
 
 On the Characters tab, you will be shown 50 characters from Disney. Some you may know, some you may not! Click on a character you want to learn more about, keep in mind, some characters may not have any details for certain things. We only display TV shows, Films and Video Games the characters have been in.
 
-![screenshot]([https://i.imgur.com/Q2H7FjM.png)
+![screenshot](https://i.imgur.com/Hc4tHSa.png)
 
 ## Character Details Page:
 
