@@ -30,7 +30,7 @@ function Characters() {
                   </p>
                 </div>
                 <div className="image">
-                  <img src={char.imageUrl} alt="" />
+                  <img src={char.imageUrl} alt="image" />
                 </div>
               </Link>
             </div>
